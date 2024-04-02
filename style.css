@@ -1,0 +1,403 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(44, 43, 39);
+}
+p{
+    color: rgb(149, 149, 149);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#main-nav{
+    width: 100%;
+    height:60px;
+    background-color: white;
+    padding: 15px 120px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    
+}
+
+#titel h2{
+    font-size: 35px;
+    font-family: "Cinzel", serif;
+
+}
+span{
+    color: rgb(0, 173, 179);
+    font-size: 40px;
+    
+}
+
+#navi ul li{
+    list-style-type: none;
+}
+
+#navi ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: ease-in-out 0.3s;
+}
+
+#navi ul li a:hover{
+    color: rgb(0, 173, 179);
+
+}
+
+#hero{
+    width: 100%;
+    height: 100%;
+    background: url(img/bg-hero.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#hero::before{
+    content: "";
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero #main-txt{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#hero #main-txt h1{
+    font-size: 65px;
+}
+
+#hero #main-txt h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#hero #main-txt button{
+    font-size: 25px;
+    padding: 8px 20px;
+    background-color: rgb(44, 43, 39);
+    color: white;
+    border: none;
+    transition: ease-in-out 0.4s;
+
+}
+
+#hero #main-txt button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(44, 43, 39);
+    /* transition: ease-in-out 0.4s; */
+}
+
+#elem{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+#elem .iner-elem{
+    width: 30%;
+    padding: 0 20px;
+}
+
+#elem .iner-elem i{
+    font-size: 50px;
+    margin: 15px ;
+    padding: 15px 17px;
+    border: 2px solid rgb(44, 43, 39);
+    display: inline-block;
+    border-radius: 50px;
+    transition: ease-in-out 0.4s;
+}
+
+#elem .iner-elem i:hover{
+    background-color: rgb(44, 43, 39);
+    color: white;
+    cursor: pointer;
+
+}
+
+#elem .iner-elem h4{
+    font-size: 25px;
+    padding-bottom: 10px ;
+}
+
+
+#elem .iner-elem p{
+    font-size: 13px;
+    padding: 0 15px;
+}
+
+#embed{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ #embed .main-txt{
+    width: 100%;
+    height: 50%;
+}
+
+#embed .main-txt h2{
+    font-size: 35px;
+}
+
+#embed .border{
+    width: 27%;
+    height: 1.5px;
+    margin: 10px 0;
+    background-color:  rgb(0, 173, 179);
+}
+
+#embed p{
+    width: 60%;
+    margin: 15px 0;
+
+}
+
+/* #embed iframe{
+    background: url(img/bg-hero.jpg);
+    background-size: cover;
+} */
+
+#card{
+    margin-top: 30px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#card .box{
+    margin:0 20px;
+    width: 30%;
+    height: 300px;
+    border: 1px solid rgb(192, 192, 192);
+    display: flex;
+}
+
+#card .box .iner1, #card .box .iner2{
+    width: 50%;
+    height: 100%;
+}
+
+#card .box .iner1{
+    background-color: #fafafabf;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card .box .iner2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#card .box .iner1 h4{
+    font-size: 22px;
+}
+
+.border{
+    
+    width: 80%;
+    height: 1.5px;
+    margin: 10px 0;
+    background-color:  rgb(0, 173, 179);
+}
+.btn{
+    margin-top: 10px;
+    padding: 7px 13px;
+    font-size: 15px;
+    border: 2px solid rgb(0, 173, 179);
+    color: rgb(0, 173, 179);
+    background-color: rgb(0, 0, 0, 0.0);
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.btn:hover{
+    background-color: rgb(0, 173, 179);
+    color: white;
+cursor: pointer;
+}
+
+
+#place{
+    width: 100%;
+    height: 50%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ #place .main-txt{
+    width: 100%;
+}
+
+#place .main-txt h2{
+    font-size: 35px;
+}
+
+#place .border{
+    width: 27%;
+    height: 1.5px;
+    margin: 10px 0;
+    background-color:  rgb(0, 173, 179);
+}
+
+#place p{
+    width: 80%;
+    margin: 15px 0;
+
+}
+
+#place .btn{
+    margin-top: 10px;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 173, 179);
+    color: rgb(0, 173, 179);
+    background-color: rgb(0, 0, 0, 0.0);
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+#place .btn:hover{
+    background-color: rgb(0, 173, 179);
+    color: white;
+    cursor: pointer;
+
+}
+
+#fott{
+    width: 100%;
+    height: 45%;
+    background-color: #dadada6e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fott-box{
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#in-bx-1{
+    height: 100%;
+    width: 35%;
+}
+
+#in-bx-1 h5{
+    width: 100%;
+    padding-top: 50px;
+    line-height: 1px;
+    font-size: 15px;
+    color: rgb(149, 149, 149);
+
+}
+
+#in-bx-1 p{
+line-height: 25px;}
+
+#in-bx-1 p span a{
+    color: rgb(0, 173, 179);
+    font-size: 13px;
+    line-height: 1px;
+    padding: 0 5px;
+    transition: ease-in-out 0.3s;
+}
+
+#in-bx-1 p span a:hover{
+    color: black;  
+}
+
+#in-bx-2{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#in-bx-2 .link-box{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#in-bx-2 .link-box h3{
+    padding-top: 25px;
+
+}
+
+#in-bx-2 .link-box a{
+    padding-top: 10px;
+    color: rgb(149, 149, 149);
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    display: inline;
+}
+
+#in-bx-2 .link-box a:hover{
+    color: rgb(0, 173, 179);
+    text-decoration: underline rgb(0, 173, 179) ;
+}
+
